@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #070606;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.linkedin-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    background-image: url('../images/linkedin.png');
+    background-size: cover;
+    color: #f44336;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.search-input {
+    flex-grow: 1;
+    font-size: 18px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.search-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+.search-box {
+    position: relative;
+}
+.search-suggestions {
+    /* position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    color: #333;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 1; */
+    /* margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    width: 60%;
+    z-index: 1;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    max-height: 200px;
+    overflow-y: auto; */
+    position: absolute;
+    top: 90px; /* adjust this value as needed */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid gray;
+    border-top: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    display: none;
+}
+
+.search-suggestion {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.search-suggestion:hover {
+    background-color: #eee;
+}
+
+.toast-message {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: #f44336;
+    color: #fff;
+    border-radius: 5px;
+    z-index: 2;
+    display: none;
+}
+
+hr {
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
